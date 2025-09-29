@@ -15,7 +15,8 @@
  */
 
 apply plugin: 'java'
-apply from: "https://raw.githubusercontent.com/gocd/gocd-plugin-gradle-task-helpers/master/helper.gradle?_=${(int) (new Date().toInstant().epochSecond / 60)}"
+//apply from: "https://raw.githubusercontent.com/gocd/gocd-plugin-gradle-task-helpers/master/helper.gradle?_=${(int) (new Date().toInstant().epochSecond / 60)}"
+apply from: "gradle-scripts/helper.gradle"
 
 gocdPlugin {
     id = 'cd.go.authorization.keycloak'
